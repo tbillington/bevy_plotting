@@ -1,0 +1,22 @@
+[package]
+name = "bevy_plotting"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy_color = { version = "0.14.0", default-features = false }
+bevy_gizmos = { version = "0.14.0", default-features = false }
+bevy_math = { version = "0.14.0", default-features = false }
+
+[dev-dependencies]
+bevy = { version = "0.14.0", default-features = false, features = [
+    "bevy_gizmos",
+    "bevy_render",
+    "x11",
+    "bevy_winit",
+    "bevy_core_pipeline",
+    "bevy_text",
+    "default_font",
+] }
+rand = "0.8.5"
+rand_distr = "0.4.3"
